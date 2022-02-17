@@ -1,0 +1,46 @@
+{
+  "name": "ashwood86",
+  "version": "1.0.0",
+  "description": "Framework for Protractor",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "pretest": "npm run tsc",
+    "test": "protractor C:/Users/ashwo/OneDrive/Documents/Automation Framework/ashwood86/CalculatorJS/cucumberconfig.js",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "serentiy-js-cucumber": "",
+    "wd-update": "webdriver-manager update",
+    "debug": "node --inspect-brk ./node_modules/.bin/protractor asyncAwait/conf.js",
+    "startTest": "npm install && npm run webdriver-update && npm run test",
+    "server": "webdriver-manager start"
+  },
+  "keywords": [
+    "serenity-js",
+    "bdd",
+    "cucumber",
+    "protractor",
+    "testing"
+  ],
+  "dependencies": {
+    "@serenity-js/assertions": "^2.33.1",
+    "@serenity-js/console-reporter": "^2.33.1",
+    "@serenity-js/core": "^2.33.1",
+    "@serenity-js/cucumber": "^2.33.1",
+    "@serenity-js/protractor": "^2.33.1",
+    "@serenity-js/serenity-bdd": "^2.33.1",
+    "@types/cucumber": "^4.0.5",
+    "@types/jasmine": "2.5.41",
+    "@types/jasminewd2": "^2.0.0",
+    "@types/node": "10.12.18",
+    "jasmine": "~3.3.1",
+    "protractor": "^7.0.0",
+    "typescript": "~3.2.2"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@types/jasminewd2": "^2.0.0",
+    "cucumber": "^6.0.5",
+    "protractor-cucumber-framework": "^8.3.1",
+    "ts-node": "^7.0.1"
+  }
+}
